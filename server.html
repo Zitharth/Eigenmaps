@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>server</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:e%3A%5Ceigenmaps%5Cserver.py">e:\eigenmaps\server.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="keras.api._v2.keras.datasets.mnist.html">keras.api._v2.keras.datasets.mnist</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_MNIST"><strong>get_MNIST</strong></a>()</dt><dd><tt>#Defining&nbsp;the&nbsp;get&nbsp;request&nbsp;for&nbsp;getting&nbsp;the&nbsp;results&nbsp;of&nbsp;the&nbsp;MNIST&nbsp;dataset</tt></dd></dl>
+ <dl><dt><a name="-get_ip"><strong>get_ip</strong></a>()</dt><dd><tt>#Defining&nbsp;the&nbsp;get&nbsp;request&nbsp;for&nbsp;getting&nbsp;the&nbsp;IP&nbsp;address</tt></dd></dl>
+ <dl><dt><a name="-get_iris"><strong>get_iris</strong></a>()</dt><dd><tt>#Defining&nbsp;the&nbsp;get&nbsp;request&nbsp;for&nbsp;getting&nbsp;the&nbsp;results&nbsp;of&nbsp;the&nbsp;Iris&nbsp;dataset</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>CNN</strong> = &lt;keras.engine.sequential.Sequential object&gt;<br>
+<strong>Iris</strong> = {'data': array([[5.1, 3.5, 1.4, 0.2],
+       [4....ris.csv', 'data_module': 'sklearn.datasets.data'}<br>
+<strong>X</strong> = array([[5.1, 3.5, 1.4, 0.2],
+       [4.9, 3. , 1....2, 3.4, 5.4, 2.3],
+       [5.9, 3. , 5.1, 1.8]])<br>
+<strong>X_test</strong> = array([[4.6, 3.2, 1.4, 0.2],
+       [4.6, 3.1, 1....7, 3. , 5. , 1.7],
+       [4.5, 2.3, 1.3, 0.3]])<br>
+<strong>X_test_CNN</strong> = array([[[[0.],
+         [0.],
+         [0.],
+   ...,
+         [0.],
+         [0.]]]], dtype=float32)<br>
+<strong>X_train</strong> = array([[6.4, 2.7, 5.3, 1.9],
+       [6.2, 2.2, 4....9, 3.8, 6.4, 2. ],
+       [4.9, 2.5, 4.5, 1.7]])<br>
+<strong>X_train_CNN</strong> = array([[[[0.],
+         [0.],
+         [0.],
+   ...,
+         [0.],
+         [0.]]]], dtype=float32)<br>
+<strong>app</strong> = &lt;Flask 'server'&gt;<br>
+<strong>randomForest</strong> = RandomForestClassifier(criterion='entropy', n_estimators=10)<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>y</strong> = array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,... 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])<br>
+<strong>y_test</strong> = array([0, 0, 0, 0, 0, 2, 1, 0, 2, 1, 1, 0, 1, 1,... 2, 1, 0, 2, 2, 1, 1, 1, 0, 0, 2, 1, 0, 0, 1, 0])<br>
+<strong>y_test_CNN</strong> = array([[0., 0., 0., ..., 1., 0., 0.],
+       [0....   [0., 0., 0., ..., 0., 0., 0.]], dtype=float32)<br>
+<strong>y_train</strong> = array([2, 1, 2, 1, 0, 0, 2, 1, 0, 1, 2, 1, 0, 0,...2, 1, 0, 1, 1, 0, 1, 2, 2, 2, 0, 0,
+       2, 2])<br>
+<strong>y_train_CNN</strong> = array([[0., 0., 0., ..., 0., 0., 0.],
+       [1....   [0., 0., 0., ..., 0., 1., 0.]], dtype=float32)</td></tr></table>
+</body></html>
