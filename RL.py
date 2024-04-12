@@ -271,40 +271,6 @@ class monte_carlo_off:
     def generate_random_no(self):
         return np.random.uniform(0,1)
 
-    # def update_policy(self):
-    #     for i in range(0, self.n-1, 1):
-    #         actions = dict()
-
-    #         for k in self.q:
-    #             if i == k[0]:
-    #                 if k[1] not in actions:
-    #                     actions[k[1]] = self.q[k]
-
-
-    #         greedy_action = None
-    #         soft_action = None
-    #         max_val = float('-inf')
-
-    #         for act in actions:
-    #             if actions[act] > max_val:
-    #                 max_val = actions[act]
-    #                 greedy_action = act
-
-    #         rand_no = self.generate_random_no()
-
-    #         print(rand_no)
-    #         print(list(actions.keys()))
-
-
-    #         if rand_no <= self.eps:
-    #             soft_action = random.choice(list(actions.keys()))
-    #         else:
-    #             soft_action = greedy_action
-
-    #         self.policy[i] = soft_action
-
-    #     return self.policy
-
 obj = monte_carlo_off(3, [], 0.1, 0.9, episodes)
 obj.update()
 
